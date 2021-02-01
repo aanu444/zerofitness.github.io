@@ -6,14 +6,14 @@ I made the first deployment of this site on the 1st of February, 2021 and built 
 - Html
 - Sass 
 
-{** Updated versions will give insight into what was used to complete the entirety of the site design. **}
+{**Updated versions will give insight into what was used to complete the entirety of the site design.**}
 
-** Version 1.0.0 **
+**Version 1.0.0**
 
 I designed this website using Figma. This is the link to the slider here: <https://www.figma.com/proto/65eHGPyJ6GO8ieAk8aaC6u/Untitled?node-id=1%3A2&scaling=scale-down>
 
 ---
-##Contributors
+## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
 
