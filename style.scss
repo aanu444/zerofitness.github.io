@@ -1,3 +1,5 @@
+@import "aboutus";
+
 $primaryColor: #2b1c47;
 $secondaryColor:#711850;
 $fontColor:#d2195b;
@@ -59,7 +61,6 @@ body{
     padding:0;
     margin:0;
     background-color:$primaryColor;
-    height:500px;
     color:white;
 }
 
@@ -69,7 +70,7 @@ div {
 
 .nav{
     @include flex;
-    height:150px;
+    min-height:150px;
 
     .circle{ 
         @include circle;
@@ -341,6 +342,7 @@ div {
     #colorChange{
         color: orange;
         display:none;
+
     }
 
     div{
@@ -439,7 +441,7 @@ div {
 
 @media only screen and (min-width:768px) and (max-width:1023px){
     #colorChange{
-        color: purple;
+        color: greenyellow;
     }
 
     div{
