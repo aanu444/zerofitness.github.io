@@ -1,0 +1,165 @@
+$fontColor:#d2195b;
+$buttonColor: #4e0e3c;
+
+@mixin circle-md{
+    border:2px solid rgba(113, 24, 80,0.3);
+    background-color:rgba(113, 24, 80,0.3);
+    position:absolute;
+    border-radius:50%;
+
+}
+
+@mixin connect-flex{
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+@mixin connect-button{
+    background-color:$buttonColor;
+    color:white;
+    border:2px solid $buttonColor;
+    border-radius:10%;
+    width:80px;
+    height:40px;
+    font-weight:bold;
+}
+
+.nav{
+        .circle-mdx{
+            @include circle-md;
+            padding:35%;
+            margin-left:35px;
+            z-index:-1;
+        }
+}
+
+.section-02{
+    @include connect-flex;
+    min-height:200px;
+
+    .txt{
+        flex-basis:50%;
+
+        p{
+            color:inherit;
+            font-size:4rem;
+            font-weight:bold;
+            margin-left:25px;
+            margin-top:100px;
+
+            span{
+                font-size:4rem;
+                color:$fontColor;
+                font-weight:bold;
+            }
+        }
+
+        button{
+            @include connect-button;
+            width:220px;
+            margin-left:25px;
+            margin-top:-30%;
+
+            a{
+                color:inherit;
+                text-decoration:none;
+            }
+        }
+    }
+
+    .img{
+        flex-basis:50%;
+
+        .picture-board{
+            border:0px solid black;
+            min-height:100px;
+            position:absolute;
+            z-index:1;
+            margin-top:30px;
+            margin-left:25px;
+            min-width:100px;
+
+            img{
+                width:40%;
+                height:200px;
+                float:left;
+            }
+
+            img:first-child{
+                margin-left:50px;
+            }
+
+            .img-move{
+                margin-left:50px;
+            }
+
+            .clr{
+                clear:both;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:424px){
+    .section-02{
+        .txt{
+            flex-basis:100%;
+        }
+        .img{
+            display:none;
+        }
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767px){
+
+    .nav{
+        .circle-mdx{
+            margin-left:-80px;
+            margin-top:110px;
+        }
+    }
+    .section-02{
+        .txt{
+            flex-basis:100%;
+        }
+
+        .img{
+            display:none;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .nav{
+        .circle-mdx{
+            margin-left:-80px;
+            padding:30%;
+            margin-top:100px;
+        }
+    }
+    .section-02{
+        .img{
+        .picture-board{
+            border:0px solid black;
+            margin-left:0px;
+            margin-top:70px;
+
+        img{
+            display:none;
+        }
+
+        img:first-child{
+            display:block;
+            width:360px;
+            margin-top:50px;
+            margin-left:0px;
+            height:310px;
+            float:clear;
+        }
+
+    }
+}
+    }
+}
