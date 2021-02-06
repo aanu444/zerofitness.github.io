@@ -16,6 +16,9 @@ I designed this website using Figma. This is the link to the slider here: <https
 **Version 2.0.0** was staged for deployment on the 4th of February, 2021 and includes the about page
 
 ---
+**Version 3.0.0** was staged for deployment on the 6th of February, 2021 and includes the connect page
+
+---
 ## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
