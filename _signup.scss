@@ -55,6 +55,10 @@ $secondaryColor:#711850;
 
     .txt-form{
         flex-basis:65%;
+
+        p{
+            text-align:center;
+        }
     }
 
     .circle-mz{
@@ -103,17 +107,27 @@ $secondaryColor:#711850;
                 width:260px;
             }
 
-
         }
-        h5{
-            text-align:center;
+
+
+            span{
+                color:red;
+                font-weight:bolder;
+                display:block;
+                text-align:center;
+                font-size:1rem;
+            }
+            
 
             input[type=submit]{
                 background:$fontColor;
                 border:2px solid $fontColor;
                 font-weight:bolder;
                 border-radius:5px;
-            }
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+    
         }
     }
 
@@ -159,6 +173,7 @@ $secondaryColor:#711850;
             input[type=email]{
                 width:200px;
             }
+
         }
     }
 }

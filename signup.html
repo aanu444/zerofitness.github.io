@@ -30,23 +30,26 @@
             <img src="images/logerror.png" alt="sign up first" title="sign up first">
         </div>
         <div class="txt-form">
+            <p id="output"></p>
             <div class="form-field">
-            <form>
+            <form method="POST" action="#" onSubmit="return false">
                <p><label for="username">Username:</label>
-                <input type="text" name="username"> </p> 
+                <input type="text" name="username"required> </p> 
                <p> <label for="fullname">Fullname:</label>
-                <input type="text" name="fullname"> </p>
+                <input type="text" name="fullname"  required> </p>
               <p><label for="email">Email:</label>
-                <input type="email" name="email"> </p>
+                <input type="email" name="email" required> </p>
               <p><label for="password1">Password:</label>
-                <input type="password" name="pass"> </p> 
+                <input type="password" name="pass" id="pass" required> </p> 
               <p><label for="password2">Retype Password:</label>
-                <input type="password" name="pass2"></p>
+                <input type="password" name="pass2" id="pass-confirm" required></p>
 
-              <h5><input type="submit" value="Submit"></h5>
+             <input type="submit" value="Submit" id="submit">
             </form>
         </div>
         </div>
     </div>
+
+    <script src="app.js"> </script>
 </body>
 </html>
