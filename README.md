@@ -19,6 +19,9 @@ I designed this website using Figma. This is the link to the slider here: <https
 **Version 3.0.0** was staged for deployment on the 6th of February, 2021 and includes the connect page
 
 ---
+**Versuo 4.0.0** was staged for deployment on the 10th of February, 2021 and includes the sign up page
+
+---
 ## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
