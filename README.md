@@ -22,6 +22,9 @@ I designed this website using Figma. This is the link to the slider here: <https
 **Versuo 4.0.0** was staged for deployment on the 10th of February, 2021 and includes the sign up page
 
 ---
+**Version 5.0.0** was staged for deployment on the 11th of February, 2021 and includes form validation for the zero fitness sign up page
+
+---
 ## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
