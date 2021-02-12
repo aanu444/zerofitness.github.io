@@ -1,0 +1,135 @@
+$fontColor:#d2195b;
+$buttonColor: #4e0e3c;
+$secondaryColor:#711850;
+
+@mixin signin-flex{
+    display:flex;
+    flex-flow:row nowrap;}
+
+@mixin circle-mp{
+    border:2px solid rgba(113, 24, 80,0.3);
+    background-color:rgba(113, 24, 80,0.3);
+    position:absolute;
+    border-radius:50%;
+}
+
+.nav-ms{
+    @include signin-flex;
+    min-height:150px;
+
+    .circle-mt{
+        @include circle-mp;
+        padding:35%;
+        z-index:-1;
+        margin-left:-350px;
+        margin-top:-100px;
+    }
+
+    .header-logo{
+        flex-basis:100%;
+    }
+
+    .logo{
+        width:310px;
+        margin-left:-6%;
+        margin-top:-4%;
+    }
+}
+
+.section-04{
+    @include signin-flex;
+    min-height:100px;
+
+    .txt{
+        flex-basis:40%;
+        text-align:center;
+
+        h3{
+            font-size:4em;
+        }
+
+        h1{
+            color:$fontColor;
+            font-weight:bolder;
+            font-size:6em;
+        }
+    }
+
+    .form{
+        flex-basis:60%;
+
+        .circle-mi{
+            @include circle-mp;
+            padding:16%;
+            z-index:-1;
+            margin-left:200px;
+            margin-top:150px;
+        }
+
+        h1{
+            font-size:4em;
+            text-align:center;
+        }
+
+        p{
+            text-align:center;
+        
+        input{
+            border:2px bold rgba(113, 24, 80,0.3);
+            border-radius:5px;
+            margin-left:5px;
+           
+            
+        }
+
+        input[type=text], input[type=password]{
+            width:240px;
+        }
+
+        
+    }
+    input[type=submit]{
+        background:$buttonColor;
+        border:2px solid $buttonColor;
+        font-weight:bolder;
+        border-radius:5px;
+        width:150px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        color:inherit;
+    }
+
+    h2{
+        color:$fontColor;
+        font-size:2em;
+        font-weight:bolder;
+        text-align:center;
+    }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .nav-ms{
+
+        .circle-mt{
+            display:none;
+        }
+
+        .logo{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+
+    .section-04{
+        .txt{
+            display:none;
+        }
+
+        .form{
+            flex-basis:100%;
+        }
+    }
+}
