@@ -1,6 +1,7 @@
 @import "aboutus";
 @import "connect";
 @import "signup";
+@import "signin";
 
 $primaryColor: #2b1c47;
 $secondaryColor:#711850;
@@ -271,7 +272,7 @@ div {
     }
 
     div{
-        border:1px solid black;
+        border:0px solid black;
     }
 
     .nav{

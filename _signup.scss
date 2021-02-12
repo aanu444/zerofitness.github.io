@@ -59,6 +59,16 @@ $secondaryColor:#711850;
         p{
             text-align:center;
         }
+
+        h3{
+            a{
+            text-decoration:none;
+            color:$fontColor;
+            font-weight:bolder;
+            text-align:center;
+            display:block;
+            }
+        }
     }
 
     .circle-mz{

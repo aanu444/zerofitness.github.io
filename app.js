@@ -1,6 +1,7 @@
 let  btn=document.getElementById("submit");
 let output=document.getElementById("output");
 
+
 btn.addEventListener("click", function(){
     let inputType=document.querySelectorAll("input");
     console.log(inputType);
@@ -36,7 +37,7 @@ btn.addEventListener("click", function(){
 btn.addEventListener("click", function(){
     let passw= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
-    if ((pass.value.match(passw)) || (pass.value.match(passw))){
+    if ((pass.value.match(passw)) && (pass.value.match(passw))){
         //output.innerHTML="Your password is strong";
         return true;
     }else {
@@ -45,9 +46,8 @@ btn.addEventListener("click", function(){
     }
 })
 
-
-
-    
+   
+        
 
 
 
