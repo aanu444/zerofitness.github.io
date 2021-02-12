@@ -25,6 +25,9 @@ I designed this website using Figma. This is the link to the slider here: <https
 **Version 5.0.0** was staged for deployment on the 11th of February, 2021 and includes form validation for the zero fitness sign up page
 
 ---
+**Version 6.0.0** was staged for deployment on the 12th of February, 2021 and includes the sign in page alongside form validation at client side using Javascript.
+
+---
 ## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
