@@ -5,7 +5,7 @@ let outputt=document.getElementById("outputt");
 
 bttn.addEventListener("click", function(){
     if((user.value.match("Admin")) && (passwo.value.match("Admin123"))){
-        window.open("index.html");
+        window.open("dashboard.html");
         return true;
     }else  if ((user.value != "Admin") && (passwo.value != "Admin123")){
         alert("Your login details are incorrect. Try again");
