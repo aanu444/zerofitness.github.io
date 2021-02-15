@@ -1,0 +1,287 @@
+$greyColor:rgba(196,196,196,0.3);
+$fontColor:#2b1c47;
+$activeFont:#2cca1e;
+$buttonColor:#fb2406;
+
+@mixin dash-flex{
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+@mixin dash-flex-mg{
+    display:flex;
+    flex-flow:row wrap;
+}
+
+@mixin flex-dash{
+    display:flex;
+    flex-flow:row wrap;
+    flex-basis:100%;
+}
+
+*{
+    font-family: 'Saira', sans-serif;
+    font-size:1rem;//also 16px;
+    ::before, ::after{
+        box-sizing:border-box;    
+    }
+}
+
+div{
+    border:0px solid black;
+}
+
+.nav{
+    @include dash-flex;
+    min-height:50px;
+
+    .logo{
+        flex-basis:20%;
+        background:$greyColor;
+
+        img{
+            width:50%;
+            margin-left:-6%;
+            margin-top:-4%;
+        }
+    }
+
+    .links{
+        flex-basis:80%;
+
+            ul{
+                list-style-type:none;
+            }
+        
+            li{
+                display:inline;
+            }
+        
+            li:first-child{
+                margin-left:30%;
+            }
+        
+            a{
+                text-decoration:none;
+                color:$fontColor;
+                font-weight:bolder;
+                margin-left:9%;
+                font-size:1.1rem;
+            }
+        
+    }
+}
+
+.section-dash{
+    @include dash-flex;
+    min-height:800px;;
+
+    .profile{
+        flex-basis:20%;
+        background:$greyColor;
+
+        img{
+            width:30%;
+            border-radius:50%;
+            border:2px solid black;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:30px;
+            
+        }
+
+        p, span{
+            font-size:0.7rem;
+            font-weight:bolder;
+            text-align:center;
+
+            span{
+                color:$activeFont;
+            }
+
+            button{
+                background:$buttonColor;
+                border:1px solid $buttonColor;
+                border-radius:10%;
+               a{
+                   text-decoration:none;
+                   color:white;
+                   font-weight:bold;
+               }
+
+            }
+        }
+    }
+    .empty-state{
+        flex-basis:80%;
+
+        img{
+            width:45%;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:150px;
+        }
+
+        p{
+            text-align:center;
+            font-weight:bolder;
+            font-size:1.1rem;
+
+            a{
+                text-decoration:none;
+                color:lightblue;
+            }
+        }
+    }
+}
+@media only screen and (max-width:424px){
+    div{
+        border:0px solid black;
+    }
+
+    .nav-mg{
+        @include dash-flex-mg;
+
+        .logo{
+            flex-basis:100%;
+
+            img{
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                width:70%;
+            }
+        }
+
+        .links{
+            flex-basis:100%;
+
+            
+            li:first-child{
+                margin-left:0;
+            }
+        }
+    }
+
+    .dash-mg{
+        @include dash-flex-mg;
+
+        .profile{
+            flex-basis:100%;
+            min-height:200px;
+
+            p,span{
+                font-size:1em;
+            }
+        }
+
+        .empty-state{
+            flex-basis:100%;
+            min-height:300px;
+        }
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767px){
+    div{
+        border:0px solid black;
+    }
+
+    .nav{
+        .logo{
+            flex-basis:40%;
+
+            img{
+                width:100%;
+            }
+        }
+
+        .links{
+            flex-basis:60%;
+
+            li:first-child{
+                margin-left:0;
+            }
+
+            a{
+                margin-left:5%;
+                font-size:1em;
+            }
+        }
+    }
+
+    .section-dash{
+        min-height:600px;
+        .profile{
+            flex-basis:40%;
+
+            img{
+                width:55%;
+            }
+
+            p, span{
+               font-size:0.9em; 
+            }
+        }
+
+        .empty-state{
+            flex-basis:60%;
+
+            img{
+                margin-top:80px;
+            }
+
+            p{
+                font-size:0.9em;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    div{
+        border:0px solid black;
+    }
+
+    .nav{
+        .logo{
+            flex-basis:40%;
+
+            img{
+                width:80%;
+            }
+        }
+
+        .links{
+            flex-basis:60%;
+
+            li:first-child{
+                margin-left:20%;
+            }
+        }
+
+    }
+
+
+    .section-dash{
+        .profile{
+            flex-basis:40%;
+
+            img{
+                width:45%;
+            }
+
+            p,span{
+                font-size:1em;
+                margin-top:20px;
+            }
+        }
+
+        .empty-state{
+            flex-basis:60%;
+        }
+    }
+}
