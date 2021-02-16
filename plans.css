@@ -1,0 +1,231 @@
+* {
+  font-family: 'Saira', sans-serif;
+  font-size: 1rem;
+}
+
+* ::before, * ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div {
+  border: 0px solid black;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  min-height: 100px;
+}
+
+.nav .logo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.nav .logo .circle {
+  border: 2px solid rgba(113, 24, 80, 0.3);
+  background-color: rgba(113, 24, 80, 0.3);
+  position: absolute;
+  border-radius: 50%;
+  padding: 25%;
+  margin-left: -200px;
+  margin-top: -310px;
+  z-index: -1;
+}
+
+.nav .logo img {
+  width: 85%;
+  margin-left: -6%;
+  margin-top: -4%;
+}
+
+.nav .links {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.nav .links ul {
+  list-style-type: none;
+}
+
+.nav .links li {
+  display: inline;
+}
+
+.nav .links li:first-child {
+  margin-left: 30%;
+}
+
+.nav .links a {
+  text-decoration: none;
+  color: #2b1c47;
+  font-weight: bolder;
+  margin-left: 9%;
+  font-size: 1.1rem;
+}
+
+.plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  min-height: 20px;
+}
+
+.plan .circle {
+  border: 2px solid rgba(113, 24, 80, 0.3);
+  background-color: rgba(113, 24, 80, 0.3);
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 600px;
+  padding: 300px;
+  z-index: -1;
+}
+
+.plan .meal-p {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.plan .meal-p p {
+  color: #2b1c47;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.plan-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  min-height: 100px;
+}
+
+.plan-menu .meal {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.plan-menu .meal img {
+  width: 70%;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #711850;
+}
+
+.plan-menu .meal p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer-no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  min-height: 100px;
+}
+
+.footer-no .foot {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer-no .foot p {
+  text-align: center;
+}
+
+.footer-no .foot span {
+  padding: 25px;
+  margin-top: 0px;
+  margin-left: 20px;
+  border-radius: 60%;
+  color: white;
+  height: 6px;
+  background: #2b1c47;
+  font-weight: bolder;
+  display: inline-block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  div {
+    border: 0px solid black;
+  }
+  .nav-mg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .nav-mg .logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .nav-mg .logo .circle {
+    display: none;
+  }
+  .nav-mg .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .nav-mg .links {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .nav-mg .links li:first-child {
+    margin-left: 5%;
+  }
+  .plan .meal-p .circle {
+    display: none;
+  }
+  .plan-menu-mg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .plan-menu-mg .meal {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  div {
+    border: 0px solid black;
+  }
+  .plan .meal-p .circle {
+    display: none;
+  }
+  .plan-menu .meal img {
+    height: 180px;
+  }
+}
+/*# sourceMappingURL=plans.css.map */
