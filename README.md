@@ -28,6 +28,9 @@ I designed this website using Figma. This is the link to the slider here: <https
 **Version 6.0.0** was staged for deployment on the 12th of February, 2021 and includes the sign in page alongside form validation at client side using Javascript.
 
 ---
+**Version 7.0.0** was staged for deployment on the 14th of February, 2021 and includes some adjustments to the signin.js file and also the creation of the dashboard page. An entire new .scss file was created for this purpose. Currently getting ready to round up this website with the plan page for the Zero fitness website..
+
+---
 ## Contributors
 
 - Omolola Odunowo <omololaodunowo@gmail.com>
